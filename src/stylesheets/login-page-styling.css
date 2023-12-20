@@ -1,0 +1,71 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 380px;
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.4s;
+  box-shadow: 2px 2px 2px 2px #f8f8f86b;
+}
+.login-container:hover {
+  transform: scale(1.02);
+}
+
+.applogo {
+  width: 100px;
+  height: 100px;
+}
+
+.login-button {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.memory {
+  font-size: 9px;
+}
+
+.memory {
+  font-size: 12px;
+}
+
+.login-label {
+  text-align: left;
+}
+.remember-me {
+  font-size: 12px;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  /* color: blacks; */
+}
+
+#login-title {
+  color: #f8f8f8;
+  font-size: 40px;
+}
+
+.remember-me-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#remember-me {
+  font-size: 12px;
+}
+.wrong-cred {
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}

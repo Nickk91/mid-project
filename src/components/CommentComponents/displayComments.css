@@ -1,0 +1,126 @@
+.commentsSection {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-comment {
+  height: 40px;
+  width: 60px;
+  border-style: none;
+  font-weight: bold;
+}
+.submit-comment:hover {
+  color: rgb(43, 43, 43);
+}
+
+.proHeight {
+  height: 70px;
+  border-radius: 10px;
+  width: 200px;
+}
+.formAddComment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.labelAndText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.displayed-comments-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.submit-comment {
+  font-size: 10px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(220, 220, 220) 40%,
+    rgb(170, 170, 170) 98%,
+    rgb(10, 10, 10) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border-bottom: 0 solid #ffffff05;
+  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
+    0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+    0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  animation: 2s rotate linear infinite;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.page-btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  width: 50px;
+  color: black;
+  border-style: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.delete-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delete {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  width: 40px;
+  border-radius: 5px;
+
+  border-style: none;
+}
+
+.delete:hover {
+  background-color: rgb(113, 113, 113);
+}
+
+.page-btn:hover {
+  background-color: rgb(113, 113, 113);
+}
