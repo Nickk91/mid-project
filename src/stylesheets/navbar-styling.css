@@ -26,6 +26,8 @@ li {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 25px;
+  text-decoration: none;
+  color: white;
 }
 
 li:hover {
